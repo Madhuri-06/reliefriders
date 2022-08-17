@@ -1,0 +1,167 @@
+.header {
+    text-align: center;
+    font-style: bold;
+    font-size: x-large; 
+    color: white;
+    background-color:rgb(117, 140, 162) ;
+    height: 50px;
+    font-family: monospace;
+}
+img {
+     display: block;
+     margin-bottom: auto;
+     margin-right: auto;
+     height: 300px;
+     width:  300px;
+     margin: auto;
+}
+#two {
+    height:40px;
+    font-size: larger;
+    margin-top: 0px;
+    }
+#one {
+   margin-top: 20px;
+    margin-bottom: 30px;
+}
+#three {
+       padding-top: 5px;
+       background-color:rgb(239, 236, 236) ;
+       font-size: x-large; 
+       font-style: bold;
+       text-align: center;
+       width:50%;
+       justify-content: center;
+       margin:  auto;
+       padding-bottom: 5px;
+}
+.help {
+    text-align: center;
+    font-style: bold;
+    padding-top: 10px;
+    font-size: xx-large; 
+}
+#four{
+    text-decoration: none;
+    color: green;
+    padding-top: 5px;
+}
+.buttons{
+    text-align: center;
+}
+#requester {
+    width:250px;
+    height:50px;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(245, 52, 52);
+    color:white;
+    border:2px solid white;
+}
+#rider {
+    width:250px;
+    height:50px;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(245, 52, 52);
+    color:white;
+    border:2px solid white;
+}
+@keyframes spin{
+    from{ transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+    }
+#imagespin:hover{
+    animation:spin 5s infinite;
+}
+#heading{
+    margin: 0;
+    height: fit-content;
+}
+#app{
+    height: fit-content;
+    margin: 0;
+    padding-top: 5px;
+}
+@media only screen and (max-width: 1000px) {
+    body{
+        font-size: small;
+    }
+    #three{
+         width: 70%;
+    }
+}
+@media only screen and (max-width: 655px) {
+    .header{
+        height: 100px;
+    }
+}
+#requester{
+  border-radius: 4px;
+  background-color: #f4221e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+#requester span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#requester span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+#requester:hover span {
+    padding-right: 25px;
+  }
+  
+#requester:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  #rider{
+    border-radius: 4px;
+    background-color: #f4221e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+   
+  }
+  #rider span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+  #rider span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+      
+    }
+    
+  #rider:hover span {
+      padding-right: 25px;
+    }
+    
+  #rider:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
